@@ -12,7 +12,9 @@ def extract_title(md: str) -> str:
 def generate_page(
     base_path: str, from_path: str, template_path: str, dest_path: str
 ) -> None:
-    print(f"Generating {dest_path} from {from_path} with template {template_path}")
+    print(
+        f"Generating {dest_path} from {from_path} with template {template_path} (base {base_path})"
+    )
     with open(from_path, "r") as f:
         markdown = f.read()
     with open(template_path, "r") as f:
