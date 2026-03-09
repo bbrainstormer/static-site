@@ -43,7 +43,7 @@ def main():
     args = sys.argv
     base_path = args[0] if len(args) > 0 else "/"
     cp_folder("static", "docs")
-    generate_pages_recursive(base_path, "content", "template.html", "public")
+    generate_pages_recursive(base_path, "content", "template.html", "docs")
 
 
 if __name__ == "__main__":
