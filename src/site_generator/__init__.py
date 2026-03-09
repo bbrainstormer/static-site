@@ -1,3 +1,3 @@
-__all__ = ["utils"]
+__all__ = ["extract_title", "generate_page"]
 
-from . import helper as utils
+from .site_generator import extract_title, generate_page

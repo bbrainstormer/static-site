@@ -1,11 +1,10 @@
-from parser import TextNode, TextType
-from site_generator import utils
+import site_generator
 
 
 def main():
-    node = TextNode("Anchor text", TextType.BOLD, None)
-    utils.generate_page("content/index.md", "template.html", "public/index.html")
-    print(node)
+    site_generator.generate_page(
+        "content/index.md", "template.html", "public/index.html"
+    )
 
 
 if __name__ == "__main__":
